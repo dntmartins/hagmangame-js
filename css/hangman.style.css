@@ -95,7 +95,7 @@ h1 {
 	background-color: rgba(0, 0, 0, 0.92);
 }
 
-#warning, #naoCompativel {
+#warning, #naoCompativel, #play, #clear {
 	display: none;
 }
 
@@ -107,8 +107,7 @@ h1 {
 	text-align: center;
 }
 
-#play, #clear {
-	display: none;
+/*#play, #clear {
 	width: 140px;
 	padding: 0.25em 0;
 	text-align: center;
@@ -118,16 +117,7 @@ h1 {
 	color: #fff;
 	background-color: #808080;
 	border-radius: 30px;
-}
-
-#stage {
-	padding-left: 0;
-	padding-right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	/*float: left;  */
-}
+}*/
 
 #word {
 	font-weight: bold;
@@ -141,13 +131,11 @@ h1 {
 #letters, #word {
 	letter-spacing: 0.26em;
 	margin: 0.25em 0 0 30px;
-	font-size: 20px;
+	font-size: 30px;
 }
 
 #letters {
 	color: red;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 #speechTxt {
