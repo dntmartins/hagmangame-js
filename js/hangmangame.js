@@ -66,17 +66,12 @@
 						isSet = 1;
 						speechTxt.html('Ouvindo...');
 						recognition.start();
-						speechBtnObj
-								.attr(
-										'src',
-										'../img/mic-on.gif');
+						speechBtnObj.css('background-image', 'url(img/mic-on.gif)');
 					} else if (isOn == false) {
 						isSet = 0;
 						speechTxt.html('Clique para falar...');
 						recognition.stop();
-						speechBtnObj
-								.attr('src',
-										'../img/mic-off.gif');
+						speechBtnObj.css('background-image', 'url(img/mic-off.gif)');
 					}
 				}
 
