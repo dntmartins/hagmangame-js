@@ -137,7 +137,7 @@
 			word.innerHTML = placeholders;
 
 			//Mostrando botão do speech
-			$('#speechBtn').css("display", "inline");
+			$('#speechBtn').css("display", "inline-block");
 
 			//Apagando palavras que foram tentadas
 			letters.innerHTML = '';

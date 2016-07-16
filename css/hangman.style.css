@@ -138,17 +138,28 @@ h1 {
 	display: inline;
 }
 
-#letters {
+#letters, #word {
 	letter-spacing: 0.26em;
-	color: #808080;
 	margin: 0.25em 0 0 30px;
 	font-size: 20px;
+}
+
+#letters {
 	color: red;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #speechBtn {
 	cursor: pointer;
 	display: none;
-	width: 70px;
-	height: 70px;
+	width: 50px;
+	height: 50px;
+	border-radius: 30px;
+	background-image: url(../img/mic-off.gif);
+}
+
+.center {
+	margin-top: 10px;
+	text-align: center;
 }

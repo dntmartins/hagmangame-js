@@ -3,7 +3,9 @@
 <head>
 <title>Jogo da Forca</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" /><!-- Escala o site de acordo com o tamanho da tela do dispositivo -->
+<meta name="viewport"
+	content="initial-scale=1.0, width=device-width, user-scalable=no" />
+<!-- Escala o site de acordo com o tamanho da tela do dispositivo -->
 <meta name="robots" content="noindex, nofollow">
 <meta name="googlebot" content="noindex, nofollow">
 <script type="text/javascript" src="js/lib/dummy.js"></script>
@@ -16,8 +18,7 @@
 </head>
 
 <body>
-	<img id="titulo_img" src="img/hangman-title.png"
-		alt="Titulo Forca">
+	<img id="titulo_img" src="img/hangman-title.png" alt="Titulo Forca">
 	<!--<h1>Jogo da Forca</h1>-->
 	<p id="warning">JavaScript precisa estar habilitado para jogar.</p>
 	<!-- Mensagem avisando ao usuário que o JS precisa estar ativado. -->
@@ -39,25 +40,22 @@
 			das partes corpóreas do enforcado.</p>
 	</div>
 	<p id="loading">Jogo Carregando. . .</p>
-	<p id="naoCompativel">Utilizar o Navegador Google Chrome versão 25
-		ou superior.</p>
-	<canvas id="stage" width="200" height="200">Seu navegador não tem suporte para o canvas.</canvas>
+	<p id="naoCompativel">Seu navegador nao e compativel para executar
+		o jogo</p>
 	<!-- Canvas Nova tag HTML 5 Especifica para trabalhar com a API Gráfica 2D do JS -->
-	<div class="row show-grid">
-		<div class="col-sm-1"></div>
-		<div class="col-sm-1">
-			<div id="play">Novo Jogo</div>
-		</div>
-		<div class="col-sm-2"></div>
-		<div class="col-sm-3">
-			<div id="clear">Limpar Placar</div>
-		</div>
-		<div class="col-sm-2"></div>
-	</div>
+	<canvas id="stage" width="200" height="200">Seu navegador não tem suporte para o canvas.</canvas>
 	<div id="letters"></div>
-	<div id="word"></div>
-	<!-- Palavra a ser adivinhada -->
-	<img id="speechBtn" src="img/mic-off.gif">
+	<div class="center">
+		<div id="play">Novo Jogo</div>
+		<div id="clear">Limpar Placar</div>
+	</div>
+	<div class="center">
+		<!-- Palavra a ser adivinhada -->
+		<div id="word"></div>
+	</div>
+	<div class="center">
+		<div id="speechBtn"></div>
+	</div>
 </body>
 </html>
 
