@@ -69,14 +69,14 @@
 						speechBtnObj
 								.attr(
 										'src',
-										'img/mic-on.gif');
+										'../img/mic-on.gif');
 					} else if (isOn == false) {
 						isSet = 0;
 						speechTxt.html('Clique para falar...');
 						recognition.stop();
 						speechBtnObj
 								.attr('src',
-										'img/mic-off.gif');
+										'../img/mic-off.gif');
 					}
 				}
 
