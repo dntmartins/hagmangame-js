@@ -61,8 +61,10 @@
 				///////// Parte voltada para reconhecimento de voz  /////////
 				//Funções do botão de comando de voz
 				function speechBtnSet(isOn) {
+					var speechTxt = $('#speechTxt');
 					if (isOn == true) {
 						isSet = 1;
+						speechTxt.html('Ouvindo...');
 						recognition.start();
 						speechBtnObj
 								.attr(
@@ -70,6 +72,7 @@
 										'img/mic-on.gif');
 					} else if (isOn == false) {
 						isSet = 0;
+						speechTxt.html('Clique para falar...');
 						recognition.stop();
 						speechBtnObj
 								.attr('src',
@@ -135,7 +138,11 @@
 			}
 			//Adicionando ao DOM as underlines
 			word.innerHTML = placeholders;
-
+			
+			//Mostrando texto do speech
+			var speechTxt = $('#speechTxt');
+			speechTxt.show();
+			
 			//Mostrando botão do speech
 			$('#speechBtn').css("display", "inline-block");
 

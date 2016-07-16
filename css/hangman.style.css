@@ -150,6 +150,11 @@ h1 {
 	margin-right: auto;
 }
 
+#speechTxt {
+	margin-top: 10px;
+	display: none;
+}
+
 #speechBtn {
 	cursor: pointer;
 	display: none;
